@@ -115,7 +115,7 @@ then
 		--name "${container_name}" \
 		"${docker_run_extra_arguments[@]}" \
 		-- \
-		"whalian:${distro}-${release}" \
+		"ghcr.io/kalrish/whalian:${distro}-${release}" \
 	|&
 	{
 		if [[ -t 1 ]]

@@ -10,7 +10,8 @@ export \
 exec \
 	docker \
 	build \
-	--tag "whalian:${distro}-${release}" \
+	--label org.opencontainers.image.source=https://github.com/kalrish/whalian \
+	--tag "ghcr.io/kalrish/whalian:${distro}-${release}" \
 	-- \
 	"${distro}/${release}" \
 	#
