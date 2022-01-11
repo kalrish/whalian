@@ -10,9 +10,14 @@ shopt \
 	nullglob \
 	#
 
+source \
+	/usr/lib/os-release \
+	#
+
+# gbp requires --arg=value syntax (i.e. --arg value fails)
 gbp \
 	buildpackage \
-	--git-ignore-branch \
+	"--git-debian-branch=${ID}/${VERSION_CODENAME}" \
 	#
 
 declare -a dscverify_options
