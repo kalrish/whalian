@@ -16,6 +16,10 @@ COPY \
 RUN /usr/local/bin/provision
 
 COPY \
+	gbp.conf \
+	/etc/git-buildpackage/gbp.conf
+
+COPY \
 	--chmod=755 \
 	build.sh \
 	/usr/local/bin/build

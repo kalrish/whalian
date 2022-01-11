@@ -12,11 +12,7 @@ shopt \
 
 gbp \
 	buildpackage \
-	--git-builder=/usr/local/bin/gbp-builder \
-	--git-export-dir=/mnt \
 	--git-ignore-branch \
-	--git-overlay \
-	--git-submodules \
 	#
 
 declare -a dscverify_options
