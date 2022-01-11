@@ -16,6 +16,7 @@ gbp \
 	--git-export-dir=/mnt \
 	--git-ignore-branch \
 	--git-ignore-new \
+	--git-overlay \
 	--git-submodules \
 	#
 
