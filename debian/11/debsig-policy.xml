@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Policy>
+	<Origin
+		Name="whalian"
+		id="KEY_ID"
+		Description="Whalian Docker-based Debian package build pipeline"
+		/>
+
+	<Selection
+		>
+		<Required
+			Type="origin"
+			File="trustedkeys.gpg"
+			id="KEY_ID"
+			/>
+	</Selection>
+
+	<Verification
+		MinOptional="0"
+		>
+		<Required
+			Type="origin"
+			File="trustedkeys.gpg"
+			id="KEY_ID"
+			/>
+	</Verification>
+</Policy>
