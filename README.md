@@ -21,3 +21,13 @@ Get the Docker container image for each target distribution release. For instanc
     $ cd whalian
     $ sh -- build.sh ubuntu 20.04
     ```
+
+## Usage
+
+```
+$ cd /path/to/package/sources
+$ [[ -d debian ]]
+$ bash -- /path/to/whalian/driver.sh ubuntu 20.04
+```
+
+To sign built packages, specify a GPG key in the environment variable `DEB_SIGN_KEYID`.
