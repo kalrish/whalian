@@ -15,7 +15,6 @@ gbp \
 	--git-builder=/usr/local/bin/gbp-builder \
 	--git-export-dir=/mnt \
 	--git-ignore-branch \
-	--git-ignore-new \
 	--git-overlay \
 	--git-submodules \
 	#
